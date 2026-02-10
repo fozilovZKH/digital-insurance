@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /*  Digital Insurance Theme - Emerald Green & Warm Sand */
+  --background: #F8F6F3;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #004D40;
+  --primary-foreground: #ffffff;
+  --secondary: #E8E4DE;
+  --secondary-foreground: #004D40;
+  --muted: #F0EDE8;
+  --muted-foreground: #5c5c5c;
+  --accent: #00695C;
+  --accent-foreground: #ffffff;
+  --destructive: #d32f2f;
+  --destructive-foreground: #ffffff;
+  --border: #E0DCD6;
+  --input: #E0DCD6;
+  --ring: #004D40;
+  --chart-1: #004D40;
+  --chart-2: #00695C;
+  --chart-3: #00897B;
+  --chart-4: #26A69A;
+  --chart-5: #4DB6AC;
+  --radius: 1.5rem;
+  --sidebar: #004D40;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #00695C;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #00897B;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #00695C;
+  --sidebar-ring: #4DB6AC;
+  --success: #2E7D32;
+  --success-foreground: #ffffff;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #F8F6F3;
+  --card: #252525;
+  --card-foreground: #F8F6F3;
+  --popover: #252525;
+  --popover-foreground: #F8F6F3;
+  --primary: #26A69A;
+  --primary-foreground: #1a1a1a;
+  --secondary: #333333;
+  --secondary-foreground: #F8F6F3;
+  --muted: #333333;
+  --muted-foreground: #a0a0a0;
+  --accent: #00897B;
+  --accent-foreground: #ffffff;
+  --destructive: #ef5350;
+  --destructive-foreground: #ffffff;
+  --border: #404040;
+  --input: #404040;
+  --ring: #26A69A;
+  --chart-1: #26A69A;
+  --chart-2: #4DB6AC;
+  --chart-3: #80CBC4;
+  --chart-4: #B2DFDB;
+  --chart-5: #E0F2F1;
+  --sidebar: #004D40;
+  --sidebar-foreground: #F8F6F3;
+  --sidebar-primary: #26A69A;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #00897B;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #00695C;
+  --sidebar-ring: #4DB6AC;
+  --success: #4CAF50;
+  --success-foreground: #ffffff;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
